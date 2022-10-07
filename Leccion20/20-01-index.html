@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo DOM con JavaScript</title>
+</head>
+
+<body>
+    <h1 id="cabecero">Ejemplo DOM con JavaScript</h1>
+    <P id="parrafo">Saludos</P>
+
+    <script>
+        let cabecero= document.getElementById("cabecero").innerHTML;//es un objeto por lo que retorna un objeto y debemos acceder al HTML
+        console.log("valor cabecero: "+cabecero);
+
+        let parrafo = document.getElementById("parrafo").innerHTML;
+        console.log("Valor parrafo: " +parrafo)
+        console.log("saludos desde JavaScript");
+    </script>
+</body>
+</html>

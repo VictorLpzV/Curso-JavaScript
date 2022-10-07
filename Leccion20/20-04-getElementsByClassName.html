@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo DOM con JavaScript</title>
+    <style>
+        .verde{
+            color: rgb(0, 255, 179);
+        }
+    </style>
+</head>
+<body>
+    <h1 class='verde'>Ejemplo DOM con JavaScript</h1>
+    <p class='verde'>Saludos!</p>
+    <p class='verde'>Otro parrafo</p>
+    <script>
+        let elementos = document.getElementsByClassName('verde');
+        console.log( `Num. elementos: ${elementos.length}`);
+        for(let elemento of elementos){
+            console.log(`${elemento.innerHTML}`);
+        }
+    </script>
+
+</body>
+</html>
