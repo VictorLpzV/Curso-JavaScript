@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    
+     <!--Este es un evento de tipo click -->
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
+    <br/>
+    <div id="mostrar"></div>
+    <script>
+     //Asignamos a nuestro evento una funcion desde JS
+     document.getElementById("titulo").onclick= cambiarTexto;
+    
+     //funcion cambiar texto
+     function cambiarTexto(){
+
+        document.getElementById("mostrar").innerHTML ="Hola desde mostrar";
+     }
+    </script>
+</body>
+</html>

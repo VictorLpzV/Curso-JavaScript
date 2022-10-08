@@ -1,0 +1,34 @@
+<!-- onmousedown cambiar al presionarlo
+onmouseuo cambia al dejar de presionarlo-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo' onmousedown="verde(this)" onmouseup="azul(this)" 
+    onclick ="rojo(this)">
+    Manejo DOM con JavaScript
+    </h1>
+    
+    <br/>
+   
+    <script>
+        function verde(titulo){
+            console.log("evento onmousedown a verde");
+            titulo.style.color = "green";
+        }
+        function azul(titulo){
+            console.log("evento onmouseup a azul");
+            titulo.style.color = "blue";
+        }
+        function rojo(titulo){
+            console.log("evento onclock a rojo");
+            titulo.style.color = "red";
+        }
+
+    </script>
+</body>
+</html>   
